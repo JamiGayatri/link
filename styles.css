@@ -1,0 +1,203 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}
+
+/* Home Page Styles */
+.home-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Vibrant gradient background */
+}
+
+.image-slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out;
+    filter: brightness(70%); /* Darken image for better text visibility */
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.content h1 {
+    font-size: 4em; /* Larger font size for impact */
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Shadow for better readability */
+}
+
+.content p {
+    font-size: 1.5em; /* Slightly larger text for emphasis */
+    margin-bottom: 1em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Shadow for better readability */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #ff6f61, #d83f5f); /* Gradient background for button */
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+.cta-button:hover {
+    background: linear-gradient(135deg, #d83f5f, #ff6f61); /* Reverse gradient on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* More pronounced shadow on hover */
+}
+
+/* Login Page Styles */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.login-form {
+    background-color: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.login-form button:hover {
+    background-color: #45a049;
+}
+
+.back-link {
+    margin-top: 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Chatbot Page Styles */
+.chatbot-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url('https://images.ctfassets.net/e5382hct74si/4DRp7zxZrLWBXKtbGwLHGG/c8d2f65e8e8f7d2b9e6d02946f8d0fb7/museum2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.chat-header {
+    background-color: rgba(0, 0, 0, 0.6); /* Darker header for better contrast */
+    padding: 1em;
+    color: white;
+}
+
+.home-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.message {
+    max-width: 70%;
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    clear: both;
+}
+
+.user-message {
+    background-color: #4CAF50;
+    color: white;
+    float: right;
+}
+
+.bot-message {
+    background-color: white;
+    color: black;
+    float: left;
+}
+
+.chat-input {
+    display: flex;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.chat-input input {
+    flex-grow: 1;
+    padding: 0.5em;
+    border: none;
+    border-radius: 20px;
+    margin-right: 0.5em;
+}
+
+.chat-input button {
+    padding: 0.5em 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #45a049;
+}
